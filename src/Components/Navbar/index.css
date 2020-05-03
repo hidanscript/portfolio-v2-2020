@@ -1,0 +1,29 @@
+nav {
+  position: absolute;
+  top:0;
+  width: 100%;
+  margin-top: 1em;
+  display: flex;
+  z-index: 10;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin-left: auto;
+  margin-right: 4em;
+}
+
+nav ul li a {
+  color: #FFFFFF;
+  margin:.3em;
+  font-size: 1.5em;
+  text-decoration: none;
+  font-family: 'Roboto';
+  font-weight: 300;
+  transition: 250ms ease;
+}
+
+nav ul li a:hover {
+  opacity: .5;
+}

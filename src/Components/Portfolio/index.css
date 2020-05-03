@@ -1,0 +1,71 @@
+.portfolio {
+  margin-top: 5em;
+  padding-top: 3em;
+  border-top: 1px solid lightgray;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+
+.portfolio h2 {
+  font-family: 'Roboto';
+  color: gray;
+}
+
+.project-card {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 4em;
+  justify-content: center;
+  width:100%;
+  margin: 2em;
+  border-bottom: 1px solid lightgray;
+}
+
+.project-card img {
+  width:500px;
+  margin-right: 20em;
+  -webkit-box-shadow: 0px 0px 20px -8px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 20px -8px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 20px -8px rgba(0,0,0,0.75);
+}
+
+.project-card p {
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size:1.1em;
+  color: gray;
+}
+
+.project-card button {
+  background: none;
+  padding: .7em;
+  margin-top: 1em;
+  cursor: pointer;
+  width: 160px;
+  border: 2px solid #BF0000;
+  font-family: 'Roboto';
+  font-size: 1.2em;
+  font-weight: 100;
+  color: #BF0000;
+  margin-right: 2em;
+  transition: 250ms ease;
+}
+
+.project-card button:hover {
+  background: #BF0000;
+  color: white;
+}
+
+.project-card .source-btn {
+  background: #BF0000;
+  color:white;
+}
+
+.project-card .source-btn:hover {
+  background: none;
+  color: #BF0000;
+}

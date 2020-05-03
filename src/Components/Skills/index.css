@@ -1,0 +1,42 @@
+.skills {
+  margin-top: 3.5em;
+  margin-left: 15%;
+  margin-right: 15%;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+}
+
+.skill-card {
+  margin: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.offset {
+  margin-left: 10px;
+}
+
+.skill-card img {
+  width:80px;
+  object-fit: cover;
+  filter: invert(8%) sepia(97%) saturate(5604%) hue-rotate(360deg) brightness(103%) contrast(111%);
+}
+
+.skill-card h3 {
+  color: #BF0000;
+  font-size: 1.3em;
+  font-family: 'Roboto';
+}
+.skill-card p {
+  margin: 0;
+  color: #666666;
+  opacity: .8;
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 1.2em;
+  max-width: 15em;
+  text-align: center;
+}
