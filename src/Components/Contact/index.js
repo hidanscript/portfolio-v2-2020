@@ -1,10 +1,31 @@
 import React from 'react';
+import axios from 'axios';
 import './index.css';
 
 function Contact() {
+
+  const handleSubmit = form => {
+    form.preventDefault();
+    const name = form.target.name.value;
+    const email = form.target.email.value;
+    const message = form.target.message.value;
+
+    const data = {
+      name,
+      email,
+      message
+    };
+    alert(data);
+    /*
+    axios.post("/send", data)
+      .then(res => alert(res))
+      .catch(err => alert(err));
+    */
+  };
+
   return(
     <div className="contact-form">
-      <form>
+      <form onSubmit={handleSubmit}>
         <h2>Contact Me</h2>
         <label>Name</label>
         <input type="text" name="name" className="name-input"/>
