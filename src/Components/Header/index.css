@@ -4,8 +4,6 @@ header {
   height: 35em;
   align-items: center;
   background-color: #222222;
-
-
 }
 
 .bgimage {
@@ -50,7 +48,6 @@ header .bgimage img {
   background: #BF0000;
   padding: 0.7em;
   width: 250px;
-  border: none;
   font-family: 'Roboto';
   margin-top: 1.5em;
   font-weight: 300;
@@ -64,4 +61,44 @@ header .bgimage img {
 
 .name-banner button:hover {
   background: none;
+}
+
+@media(max-width:1366px) {
+
+  .bgimage {
+    display : none;
+  }
+
+  header {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    min-height: 60vh;
+    justify-content: center;
+    background-color: #222222;
+  }
+
+  .name-banner {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .name-banner h1 {
+    font-size: 2.5em;
+    padding-bottom: .3em;
+    margin: 1em;
+  }
+  .name-banner h1, .name-banner h3 {
+    color: white;
+    font-family: 'Roboto';
+    border-bottom: 1px solid rgba(255,255,255,.5);
+    font-weight: 300;
+  }
+
+  .name-banner h3 {
+    margin:0;
+    border: none;
+    font-size: 3em;
+    max-width: 10em;
+  }
 }

@@ -15,16 +15,15 @@ function Contact() {
       email,
       message
     };
-    alert(data);
-    /*
+
     axios.post("/send", data)
       .then(res => alert(res))
       .catch(err => alert(err));
-    */
+
   };
 
   return(
-    <div className="contact-form">
+    <div id="contact" className="contact-form">
       <form onSubmit={handleSubmit}>
         <h2>Contact Me</h2>
         <label>Name</label>

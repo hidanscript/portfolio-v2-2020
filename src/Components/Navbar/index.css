@@ -14,7 +14,7 @@ nav ul {
   margin-right: 4em;
 }
 
-nav ul li a {
+nav ul li .anchor {
   color: #FFFFFF;
   margin:.3em;
   font-size: 1.5em;
@@ -24,6 +24,6 @@ nav ul li a {
   transition: 250ms ease;
 }
 
-nav ul li a:hover {
+nav ul li .anchor:hover {
   opacity: .5;
 }

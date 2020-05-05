@@ -16,7 +16,7 @@ function Project(props) {
       <div className="project-content">
         <h2>{props.title}</h2>
         <p>{props.content}</p>
-        <button onClick={openPage}>Visit site</button>
+        <button className="visit-btn" onClick={openPage}>Visit site</button>
         <button onClick={openSource} className="source-btn">Source Code</button>
       </div>
     </div>

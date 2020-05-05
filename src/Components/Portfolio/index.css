@@ -51,13 +51,15 @@
   font-size: 1.2em;
   font-weight: 100;
   color: #BF0000;
+  outline: none;
   margin-right: 2em;
   transition: 250ms ease;
 }
 
-.project-card button:hover {
-  background: #BF0000;
-  color: white;
+.project-card .visit-btn:hover {
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(191,0,0,1);
+  -moz-box-shadow: 0px 0px 5px 1px rgba(191,0,0,1);
+  box-shadow: 0px 0px 5px 1px rgba(191,0,0,1);
 }
 
 .project-card .source-btn {
@@ -68,4 +70,32 @@
 .project-card .source-btn:hover {
   background: none;
   color: #BF0000;
+}
+
+@media(max-width:1366px) {
+  .portfolio {
+    justify-content: center;
+  }
+
+  .project-card img {
+    margin: 0;
+    padding:0;
+    align-self: center;
+    width: 400px;
+  }
+
+  .project-card {
+    margin:0;
+    align-items: center;
+    align-content: center;
+  }
+
+  .project-content {
+    align-self: center;
+    text-align: center;
+  }
+
+  .project-card button {
+    margin-left: 2em;
+  }
 }

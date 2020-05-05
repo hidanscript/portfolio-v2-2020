@@ -5,7 +5,7 @@ import './index.css';
 
 function Portfolio() {
   return(
-    <div className="portfolio">
+    <div id="portfolio" className="portfolio">
       <h2>PORTFOLIO</h2>
       <Project
         image={ChatScreen}
@@ -13,7 +13,7 @@ function Portfolio() {
         title="Sweeper (Whatsapp Web Clone)"
         content="A realtime chat, made with React, Node.js, Express and Socket.io."
         link="https://github.com/hidanscript/sweeper-web"
-        page="/chat"
+        page="/apps/chat"
       />
     </div>
   );
