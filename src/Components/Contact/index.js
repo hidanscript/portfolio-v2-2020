@@ -17,7 +17,7 @@ function Contact() {
     };
 
     axios.post("/send", data)
-      .then(res => alert(res))
+      .then(res => console.log(res))
       .catch(err => alert(err));
 
   };
