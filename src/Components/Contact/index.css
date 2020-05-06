@@ -82,7 +82,14 @@
 
 
 @media(max-width:500px) {
+
+ .contact-form {
+   margin:auto;
+ }
+
  .contact-form form {
-   width:15em;
+   margin:0;
+   width:12em;
+   padding:2.5em;
  }
 }

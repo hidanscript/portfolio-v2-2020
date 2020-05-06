@@ -1,11 +1,11 @@
 .prueba-nav {
-  top: unset !important;
-  margin: unset !important;
-  padding: unset !important;
-  display: unset !important;
+  position: absolute;
+  top: 0;
+  right:0;
   justify-content: center;
+  margin-top: 1em;
+  margin-right: 2em;
   align-items: center;
-  border: 1px solid red;
   z-index: 10;
 }
 
@@ -28,4 +28,12 @@ nav ul li .anchor {
 
 nav ul li .anchor:hover {
   opacity: .5;
+}
+
+@media(max-width:500px) {
+  .prueba-nav {
+    display:none;
+    font-size: .8em;
+    margin:auto;
+  }
 }
