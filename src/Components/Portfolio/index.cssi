@@ -29,13 +29,11 @@
 
 .project-card img {
   width:500px;
+  margin-right: 20em;
+  border: 1px solid red;
   -webkit-box-shadow: 0px 0px 20px -8px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 0px 20px -8px rgba(0,0,0,0.75);
   box-shadow: 0px 0px 20px -8px rgba(0,0,0,0.75);
-}
-
-.project-content {
-  margin: 5em;
 }
 
 .project-card p {

@@ -1,23 +1,25 @@
-nav {
-  position: absolute;
-  top:0;
-  width: 100%;
-  margin-top: 1em;
-  display: flex;
+.prueba-nav {
+  top: unset !important;
+  margin: unset !important;
+  padding: unset !important;
+  display: unset !important;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
   z-index: 10;
 }
 
 nav ul {
   display: flex;
+  justify-content: center;
+  align-items: center;
   list-style: none;
-  margin-left: auto;
-  margin-right: 4em;
 }
 
 nav ul li .anchor {
   color: #FFFFFF;
   margin:.3em;
-  font-size: 1.5em;
+  font-size: 1.4em;
   text-decoration: none;
   font-family: 'Roboto';
   font-weight: 300;
