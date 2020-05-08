@@ -1,11 +1,11 @@
-import React from 'react';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
-import Navbar from '../Navbar';
-import './index.css';
-import JS from '../../Assets/js.png';
+import React from "react";
+import AnchorLink from "react-anchor-link-smooth-scroll";
+import Navbar from "../Navbar";
+import "./index.css";
+import JS from "../../Assets/js.png";
 
 function Header() {
-  return(
+  return (
     <header>
       <Navbar />
       <div className="name-banner">

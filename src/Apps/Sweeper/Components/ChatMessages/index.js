@@ -8,7 +8,7 @@ import Message from '../Message';
 import './index.css';
 
 const endpoint = "/messages";
-const socket = SocketClient(endpoint);
+const socket = SocketClient('/');
 
 const userDefault = {
     user_id: sessionStorage.getItem('user_id'),
