@@ -8,7 +8,7 @@ export default function TodoGenerator(props) {
     const title = event.target.title.value;
     const description = event.target.description.value;
 
-    await Axios.post("http://192.168.0.53:4000/tasks", { title, description });
+    await Axios.post("/tasks", { title, description });
     props.refreshCallback();
     const form = document.querySelector('#todogenerator');
     form.reset();

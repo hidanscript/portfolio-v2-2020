@@ -5,7 +5,7 @@ import Axios from "axios";
 export default function Todo(props) {
   const deleteTask = async () => {
     if (window.confirm("Are you sure you want to delete this task?")) {
-      await Axios.delete("http://192.168.0.53:4000/tasks", {
+      await Axios.delete("/tasks", {
         data: { id: props.taskId },
       });
       props.refreshCallback();

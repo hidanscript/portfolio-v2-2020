@@ -11,7 +11,7 @@ function App() {
   const [tasks, setTasks] = useState([]);
 
   const refreshTasks = () => {
-    Axios.get("http://192.168.0.53:4000/tasks")
+    Axios.get("/tasks")
       .then((res) => res.data)
       .then((tasks) => {
         setTasks(tasks);
