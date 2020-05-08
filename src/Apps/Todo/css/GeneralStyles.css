@@ -1,0 +1,49 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.btn {
+  border:none;
+  padding:1em;
+  cursor: pointer;
+  transition: 100ms ease;
+}
+
+.btn-primary {
+  background-color: #000;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #222;
+}
+
+.btn-danger {
+  color: white;
+  background-color: #d9534f;
+}
+
+.btn-danger:hover {
+  background-color: #e6908d;
+}
+
+.App-todo > * {
+  font-family: 'Roboto';
+}
+
+.App-todo h3, .App-todo h2, .App-todo h1, .App-todo p, .App-todo label {
+  font-weight: 100;
+}
+
+.App-todo label {
+  margin-top: .5em;
+}
+
+.App-todo input {
+  height: 1.5em;
+}
+
+.ml-4 {
+  margin-left: 30px;
+}

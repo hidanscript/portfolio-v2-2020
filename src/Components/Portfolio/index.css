@@ -36,12 +36,14 @@
 
 .project-content {
   margin: 5em;
+  margin-left: 6em;
 }
 
 .project-card p {
   font-family: 'Roboto';
   font-weight: 300;
   font-size:1.1em;
+  width: 500px;
   color: gray;
 }
 
@@ -57,7 +59,7 @@
   font-weight: 100;
   color: #BF0000;
   outline: none;
-  margin-right: 2em;
+  margin-right: 1em;
   transition: 250ms ease;
 }
 
@@ -101,12 +103,17 @@
   }
 
   .project-card button {
-    margin-left: 2em;
+    margin-left: 1em;
   }
 }
 
 @media(max-width:500px) {
   .project-card img {
+    margin-top: 4em;
+    width: 300px;
+  }
+
+  .project-card p {
     width: 300px;
   }
 }

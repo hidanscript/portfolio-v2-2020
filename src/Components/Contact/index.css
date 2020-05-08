@@ -89,7 +89,9 @@
 
  .contact-form form {
    margin:0;
-   width:12em;
+   margin-top: 3em;
+   margin-bottom: 3em;
+   width:15em;
    padding:2.5em;
  }
 }
