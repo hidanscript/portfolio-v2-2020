@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
 import './index.css';
 
 function Contact() {
 
+  const [ messageState, setMessageState ] = useState(null);
+
   const handleSubmit = form => {
+
     form.preventDefault();
     const name = form.target.name.value;
     const email = form.target.email.value;
@@ -17,14 +20,23 @@ function Contact() {
     };
 
     axios.post("/send", data)
-      .then(res => console.log(res))
-      .catch(err => alert(err));
+      .then(res => resetForm())
+      .catch(err => resetForm());
 
+  };
+
+  const resetForm = () => {
+    const form = document.querySelector('#contact-form');
+    form.reset();
+    setMessageState(1);
   };
 
   return(
     <div id="contact" className="contact-form">
-      <form onSubmit={handleSubmit}>
+      <form id="contact-form" onSubmit={handleSubmit}>
+        { messageState &&
+          (<div className="message-state-form">✔ Message sent!</div>)
+        }
         <h2>Contact Me</h2>
         <label>Name</label>
         <input type="text" name="name" className="name-input"/>

@@ -2,12 +2,22 @@ import React from 'react';
 import Project from './project.js';
 import ChatScreen from '../../Assets/chat2.png';
 import TodoScreen from '../../Assets/todo.png';
+import PricesScreen from '../../Assets/prices.png';
 import './index.css';
 
 function Portfolio() {
   return(
     <div id="portfolio" className="portfolio">
       <h2>PORTFOLIO</h2>
+      <Project
+        image={PricesScreen}
+        alt="prices"
+        classes="project-card-prices"
+        title="Prices Components"
+        content="Prices template, made with HTML, Vanilla Javascript and Sass."
+        link="https://github.com/hidanscript/pricing-cards"
+        page="https://hidanscript.github.io/pricing-cards/"
+      />
       <Project
         image={ChatScreen}
         alt="chat"

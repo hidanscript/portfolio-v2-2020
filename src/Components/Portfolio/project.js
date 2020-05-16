@@ -12,7 +12,7 @@ function Project(props) {
 
   return(
     <div className="project-card">
-      <img src={props.image} alt={props.alt} />
+      <img src={props.image} className={ props.classes } alt={props.alt} />
       <div className="project-content">
         <h2>{props.title}</h2>
         <p>{props.content}</p>

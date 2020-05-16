@@ -78,6 +78,29 @@
   outline: 2px solid #BF0000;
   padding: 6px;
   font-size: .9em;
+  transition: 250ms ease;
+}
+
+.message-state-form {
+  background-color: #5dba76;
+  opacity: 0.8;
+  padding: 1em;
+  border-radius: 3px;
+  color: rgba(0,0,0,.8);
+  font-weight: bold;
+  animation: intro 550ms ease;
+}
+
+@keyframes intro {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+
+  100% {
+    opacity: 0.8;
+    transform: translateX(0);
+  }
 }
 
 
