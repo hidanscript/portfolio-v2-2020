@@ -21,7 +21,7 @@ function Contact() {
 
     axios.post("/send", data)
       .then(res => resetForm())
-      .catch(err => resetForm());
+      .catch(err => alert(err));
 
   };
 
